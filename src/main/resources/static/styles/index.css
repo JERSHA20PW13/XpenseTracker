@@ -1,0 +1,55 @@
+body {
+
+    /* font-family: 'Poppins', sans-serif;
+    font-size: .9rem; */
+
+    font-size: smaller;
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+  margin: 10px 10vw;
+}
+.widget {
+  width: 200px;
+  border-radius: 10px;
+  margin: 30px 15px;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header{
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.expense-card{
+  border-radius: 10px;
+  margin: 30px 15px;
+  background-color: white;
+  padding: 20px 30px;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.expense-card::before{
+  content: '';
+  position: absolute;
+  left:0;
+  top:0;
+  width: 12px;
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+  background-color: #7DCE13
+} 
+
+.expense-card.Cash::before{
+  background-color: #31C6D4
+} 
+.expense-card.Creditcard::before{
+  background-color: #FBDF07
+} 
+.expense-card.Transfer::before{
+  background-color: #FF1E1E
+}
